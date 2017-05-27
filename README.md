@@ -4,6 +4,20 @@ A full stack restaurant app built using Node.js 7.6+ and modern JavaScript.
 
 ***Note: Please do not use this for production. The application is still under heavy development and the API is not stable.***
 
+## Overview
+
+[![Build Status][travis-image]][travis-url]
+
+* [Features](#features)
+* [Application Architecture](#architecture)
+  * [Functionalties](#functionalties)
+  * [Development Stack](#development)
+* [Quickstart](#quickstart)
+* [Documentation](#documentation)
+  * [Standard](#standard)
+  * [Sample Data](#data)
+  * [Deployment](#deployment)
+
 ## Features
 
 Users can:
@@ -12,7 +26,7 @@ Users can:
 - Review
 - Curate their favourite restaurants
 
-## Application Architecture
+## Architecture
 
 The application has three main models
 - Users
@@ -29,7 +43,7 @@ The application is designed for today's technology needs such as:
 - AJAX REST API
 - File upload and image resizing
 
-### Development Stack
+### Development
 
 Modern JavaScript:
 - ECMAScript 6 (ES6) also known as ECMAScript 2015 (ES2015)
@@ -43,7 +57,7 @@ Modern JavaScript:
 - SCSS for CSS
 - Webpack
 
-## Development
+## Quickstart
 
 Basically, the app was developed in ES6. You should have knowledge of how functions, variables, Objects, Arrays and other JavaScript fundamentals work.
 
@@ -58,7 +72,7 @@ Run the following command in your terminal:
 Install all node packages (dependencies) listed in `package.json` file:
 
 ```bash
-npm start
+npm install
 ```
 
 Start our server and run the app:
@@ -67,7 +81,13 @@ Start our server and run the app:
 npm start
 ```
 
-## Sample Data
+## Documentation
+
+### Standard
+
+The app was designed and developed based on widely adopted general JavaScript best practices from the industry's best Node.js developers.
+
+### Data
 
 To load sample data, run the following command in your terminal:
 
@@ -89,11 +109,7 @@ That will populate 16 stores with 3 authors and 41 reviews. The logins for the a
 |John Doe|john@example.com|john|
 |Foo Bar|foo@example.com|foo|
 
-## Standard
-
-The app was designed and developed based on widely adopted general JavaScript best practices from the industry's best Node.js developers.
-
-## Deployment
+### Deployment
 
 Supports:
 - [x] Deploying to Now
