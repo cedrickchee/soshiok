@@ -1,12 +1,10 @@
-# SoShiok
+# SoShiok &middot; [![Build Status](https://img.shields.io/travis/cedrickchee/soshiok/master.svg?style=flat)](https://travis-ci.org/cedrickchee/soshiok) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md#pull-requests)
 
 A full stack restaurant app built using Node.js 7.6+ and modern JavaScript.
 
 ***Note: Please do not use this for production. The application is still under heavy development and the API is not stable.***
 
 ## Overview
-
-[![Build Status][travis-image]][travis-url]
 
 * [Features](#features)
 * [Application Architecture](#architecture)
@@ -50,12 +48,21 @@ Modern JavaScript:
   - ES6 features are heavily used throughout the app, from destructuring to arrow functions
 - ES6 Async + Await
   - It allows us to craft easy to read, logical flows without relying on external flow control libraries, chaining multiple promises, or writing spaghetti code by nesting callbacks
-- Express
-- Pug templating
-- Passport for unobtrusive authentication
+- [Express](https://expressjs.com/)
+  - Fast, unopinionated, minimalist web framework for Node.js
+- [Pug](https://pugjs.org/)
+  - Formerly known as "Jade"
+  - A robust, elegant, feature rich template engine for Node.js
+- [Passport](http://passportjs.org/)
+  - A simple, unobtrusive authentication for Node.js
   - Passport is a middleware for Node.js
-- SCSS for CSS
-- Webpack
+- [Sass](http://sass-lang.com/) (Syntactically awesome style sheets)
+  - A CSS preprocessor
+- [Webpack](https://webpack.js.org/)
+  - A module bundler for modern JavaScript applications
+- [MongoDB](https://www.mongodb.com/)
+  - A document-oriented database and NoSQL database
+  - Uses JSON-like documents with schemas
 
 ## Quickstart
 
@@ -115,3 +122,7 @@ Supports:
 - [x] Deploying to Now
 - [ ] Deploying to Heroku
 - [ ] Digital Ocean Linux
+
+## License
+
+**SoShiok** is an open-source software and is licensed under the [MIT License](./LICENSE).
