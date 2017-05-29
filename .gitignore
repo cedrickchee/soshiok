@@ -1,6 +1,38 @@
-node_modules/
+# OS
+# ===========
 .DS_Store
-*.log
-.idea
+Thumbs.db
+
+# Node and related ecosystem
+# ==========================
+.nodemonignore
+.sass-cache/
+node_modules/
+.bower-*/
+.idea/
+coverage/
+.coveralls.yml
+
+# App and assets
+# ==============
+public/dist/
+*.pem
 variables.env
 variables.env.now
+
+# General
+# =======
+*.log
+*.dat
+*.out
+*.pid
+*.gz
+*.tmp
+*.bak
+logs/
+
+# Sublime editor
+# ==============
+.sublime-project
+*.sublime-project
+*.sublime-workspace
