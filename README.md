@@ -1,4 +1,4 @@
-# SoShiok &middot; [![Build Status](https://img.shields.io/travis/cedrickchee/soshiok/master.svg?style=flat)](https://travis-ci.org/cedrickchee/soshiok) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md#pull-requests)
+# SoShiok &middot; [![Build Status](https://img.shields.io/travis/cedrickchee/soshiok/master.svg?style=flat)](https://travis-ci.org/cedrickchee/soshiok)
 
 A full stack restaurant app built using Node.js 7.6+ and modern JavaScript.
 
