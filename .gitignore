@@ -18,6 +18,8 @@ coverage/
 # App and assets
 # ==============
 public/dist/
+public/uploads/*
+!public/uploads/store.png
 *.pem
 variables.env
 variables.env.now
