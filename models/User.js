@@ -9,7 +9,7 @@ const passportLocalMongoose = require('passport-local-mongoose');
 const userSchema = new Schema({
   email: {
     type: String,
-    unique: true
+    unique: true,
     lowercase: true,
     trim: true,
     validate: [validator.isEmail, 'Invalida Email Address'],
