@@ -84,7 +84,7 @@ exports.updateStore = async (req, res) => {
     new: true, // return the new store instead of the old one
     runValidators: true
   }).exec();
-  req.flash('success', `Successfully updated <strong>${store.name}</strong>. <a href="/stores/${store.slug}">View Store</a>`);
+  req.flash('success', `Successfully updated <strong>${store.name}</strong>. <a href="/store/${store.slug}">View Store</a>`);
 
   // Redirect them the store and tell them it worked
   res.redirect(`/stores/${store._id}/edit`);
@@ -141,6 +141,10 @@ exports.mapStores = async (req, res) => {
     }
   };
 
-  const stores = await Store.find(q).select('slug name description location').limit(10);
+  const stores = await Store.find(q).select('slug name description location photo').limit(10);
   res.json(stores);
 };
+
+exports.mapPage = (req, res) => {
+  res.render('map', { title: 'Store Locator' });
+}
