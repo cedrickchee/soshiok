@@ -65,7 +65,6 @@ exports.reset = async (req, res) => {
     return res.redirect('/login');
   }
   // If there is a user, show the next password form
-  console.log(user);
   res.render('reset', { title: 'Reset your Password' });
 };
 
