@@ -40,6 +40,11 @@ const storeSchema = new mongoose.Schema({
   }
 });
 
+storeSchema.index({
+  name: 'text',
+  description: 'text'
+});
+
 storeSchema.pre('save', async function(next) {
   if (!this.isModified('name')) {
     next(); // skip it
@@ -47,6 +52,7 @@ storeSchema.pre('save', async function(next) {
   }
   this.slug = slug(this.name);
 
+  // Make slugs unique.
   // find other stores that have a slug of brew-bar, brew-bar-1, brew-bar-2
   const slugRegEx = new RegExp(`^(${this.slug})((-[0-9]*$)?)$`, 'i');
   const storesWithSlug = await this.constructor.find({ slug: slugRegEx });
@@ -56,7 +62,6 @@ storeSchema.pre('save', async function(next) {
   }
 
   next();
-  // TODO make more resilient so slugs are unique
 });
 
 storeSchema.statics.getTagsList = function() {
@@ -65,6 +70,6 @@ storeSchema.statics.getTagsList = function() {
     { $group: { _id: '$tags', count: { $sum: 1 } } },
     { $sort: { count: -1 } }
   ]);
-}
+};
 
 module.exports = mongoose.model('Store', storeSchema);
